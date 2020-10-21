@@ -1,0 +1,8 @@
+framework module "Alrdframework" {
+	header "ref.h"
+    header "Alrdframework.objc.h"
+    header "Universe.objc.h"
+    header "Alrdframework.h"
+
+    export *
+}
