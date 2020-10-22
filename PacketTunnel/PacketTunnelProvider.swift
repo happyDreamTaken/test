@@ -41,11 +41,11 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
         let networkSettings = NEPacketTunnelNetworkSettings(tunnelRemoteAddress: "192.0.2.2")
         networkSettings.mtu = TunnelMTU as NSNumber
         networkSettings.ipv4Settings = NEIPv4Settings(addresses: ["192.169.89.1"], subnetMasks: ["255.255.255.0"])
-      self.confighttplocal(networkSettings: networkSettings)
+//      self.confighttplocal(networkSettings: networkSettings)
         self.setDNSConfigure(networksetting: networkSettings)
         
         self.startgoProxy()
-        self.startHttpproxy()
+//        self.startHttpproxy()
      
         setTunnelNetworkSettings(networkSettings) { error in
                     guard error == nil else {
